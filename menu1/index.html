@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>exported project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 300vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Anton:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="menu1-container1">
+        <div class="menu1-menu1">
+          <img
+            src="public/external/image4344-s4n-2000h.png"
+            alt="Image4344"
+            class="menu1-image10"
+          />
+          <img
+            src="public/external/image5588-i2qv-2000h.png"
+            alt="Image5588"
+            class="menu1-image11"
+          />
+          <img
+            src="public/external/image5588-oqo-2000h.png"
+            alt="Image5588"
+            class="menu1-image12"
+          />
+          <div class="menu1-root1">
+            <img
+              src="public/external/image4340-yhsi-200w.png"
+              alt="Image4340"
+              class="menu1-image13"
+            />
+            <div class="menu1-groups1">
+              <span class="menu1-text100">
+                <span>Vegetables, cheeses, ground meats, tomato sauce,</span>
+                <br />
+                <span>seasonings and spices</span>
+              </span>
+              <span class="menu1-text104">$40.00</span>
+              <img
+                src="public/external/background4340-sypm-200h.png"
+                alt="Background4340"
+                class="menu1-background10"
+              />
+              <span class="menu1-text105">Lasagne</span>
+              <img
+                src="public/external/image4340-57xl-200h.png"
+                alt="Image4340"
+                class="menu1-image14"
+              />
+            </div>
+            <img
+              src="public/external/image4340-ihr-200h.png"
+              alt="Image4340"
+              class="menu1-image15"
+            />
+            <img
+              src="public/external/image4340-6lrj-200w.png"
+              alt="Image4340"
+              class="menu1-image16"
+            />
+            <button class="menu1-button1">
+              <img
+                src="public/external/background4341-kfxe-200h.png"
+                alt="Background4341"
+                class="menu1-background11"
+              />
+              <span class="menu1-text106">SEASONAL</span>
+            </button>
+            <span class="menu1-text107">$25.50</span>
+            <span class="menu1-text108">Greek Salad</span>
+            <img
+              src="public/external/background4341-c6bo-200h.png"
+              alt="Background4341"
+              class="menu1-background12"
+            />
+            <span class="menu1-text109">
+              <span>Tomatoes, green bell pepper, sliced cucumber onion,</span>
+              <br />
+              <span>olives, and feta cheese.</span>
+            </span>
+            <img
+              src="public/external/image4341-byn-200w.png"
+              alt="Image4341"
+              class="menu1-image17"
+            />
+            <img
+              src="public/external/image4341-92ww-200h.png"
+              alt="Image4341"
+              class="menu1-image18"
+            />
+            <img
+              src="public/external/image4341-pdjr-200h.png"
+              alt="Image4341"
+              class="menu1-image19"
+            />
+            <span class="menu1-text113">$10.00</span>
+            <button class="menu1-button2">
+              <img
+                src="public/external/background4342-0rcb-200h.png"
+                alt="Background4342"
+                class="menu1-background13"
+              />
+              <span class="menu1-text114">NEW</span>
+            </button>
+            <span class="menu1-text115">$39.00</span>
+            <span class="menu1-text116">Tokusen Wagyu</span>
+            <span class="menu1-text117">Butternut Pumpkin</span>
+            <img
+              src="public/external/background4342-cvxn-200h.png"
+              alt="Background4342"
+              class="menu1-background14"
+            />
+            <img
+              src="public/external/background4342-s91h-200h.png"
+              alt="Background4342"
+              class="menu1-background15"
+            />
+            <span class="menu1-text118">
+              <span>Typesetting industry lorem Lorem Ipsum is simply</span>
+              <br />
+              <span>dummy text of the priand.</span>
+            </span>
+            <span class="menu1-text122">
+              <span>Vegetables, cheeses, ground meats, tomato sauce,</span>
+              <br />
+              <span>seasonings and spices.</span>
+            </span>
+            <img
+              src="public/external/image4343-0rlo-200h.png"
+              alt="Image4343"
+              class="menu1-image20"
+            />
+            <img
+              src="public/external/image4343-cci-200h.png"
+              alt="Image4343"
+              class="menu1-image21"
+            />
+            <img
+              src="public/external/image4343-myv9-200h.png"
+              alt="Image4343"
+              class="menu1-image22"
+            />
+            <img
+              src="public/external/image4343-s38-200h.png"
+              alt="Image4343"
+              class="menu1-image23"
+            />
+            <img
+              src="public/external/image4343-8dxp-200h.png"
+              alt="Image4343"
+              class="menu1-image24"
+            />
+            <span class="menu1-text126">$25.00</span>
+            <span class="menu1-text127">$49.00</span>
+            <span class="menu1-text128">Opu Fish</span>
+            <span class="menu1-text129">Olivas Rellenas</span>
+            <img
+              src="public/external/background4344-ethh-200h.png"
+              alt="Background4344"
+              class="menu1-background16"
+            />
+            <img
+              src="public/external/background4344-mru-200h.png"
+              alt="Background4344"
+              class="menu1-background17"
+            />
+            <span class="menu1-text130">
+              <span>
+                Avocados with crab meat, red onion, crab salad stuffed
+              </span>
+              <br />
+              <span>red bell pepper and green bell pepper</span>
+            </span>
+            <span class="menu1-text134">
+              <span>Vegetables, cheeses, ground meats, tomato sauce,</span>
+              <br />
+              <span>seasonings and spices</span>
+            </span>
+          </div>
+          <img
+            src="public/external/image2610-jw0q-200h.png"
+            alt="Image2610"
+            class="menu1-image25"
+          />
+          <img
+            src="public/external/image2610-o8s-200w.png"
+            alt="Image2610"
+            class="menu1-image26"
+          />
+          <img
+            src="public/external/image2610-a29g-200h.png"
+            alt="Image2610"
+            class="menu1-image27"
+          />
+          <div class="menu1-root2">
+            <img
+              src="public/external/image2610-zz3-200h.png"
+              alt="Image2610"
+              class="menu1-image28"
+            />
+            <img
+              src="public/external/image2610-jf5f-200h.png"
+              alt="Image2610"
+              class="menu1-image29"
+            />
+            <img
+              src="public/external/image2610-tjka4-200w.png"
+              alt="Image2610"
+              class="menu1-image30"
+            />
+            <img
+              src="public/external/image2610-yn9-200h.png"
+              alt="Image2610"
+              class="menu1-image31"
+            />
+            <span class="menu1-text138">SPECIAL SELECTION</span>
+            <span class="menu1-text139">HOME</span>
+            <span class="menu1-text140">
+              <span class="menu1-text141">Table No</span>
+              <span>11</span>
+            </span>
+            <div class="menu1-frame2"></div>
+            <div class="menu1-searchbar">
+              <div class="menu1-statelayer1">
+                <div class="menu1-leadingicon">
+                  <div class="menu1-container2">
+                    <div class="menu1-statelayer2">
+                      <img
+                        src="public/external/iconi554-kfwd.svg"
+                        alt="IconI554"
+                        class="menu1-icon1"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="menu1-content">
+                  <span class="menu1-text143 M3bodylarge">
+                    Hinted search text
+                  </span>
+                </div>
+                <div class="menu1-trailing-elements">
+                  <div class="menu1-frame1sttrailingicon">
+                    <div class="menu1-container3">
+                      <div class="menu1-statelayer3">
+                        <img
+                          src="public/external/iconi554-7zbp.svg"
+                          alt="IconI554"
+                          class="menu1-icon2"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="menu1-frame1"></div>
+            <span class="menu1-text144">Delicious Menu</span>
+          </div>
+          <img
+            src="public/external/image2696-ir3o-200h.png"
+            alt="Image2696"
+            class="menu1-image32"
+          />
+          <span class="menu1-text145">
+            <span>Avocados with crab meat, red onion, crab salad stuffed</span>
+            <br />
+            <span>red bell pepper and green bell pepper</span>
+          </span>
+          <span class="menu1-text149">$25.00</span>
+          <img
+            src="public/external/background2697-le4a-200h.png"
+            alt="Background2697"
+            class="menu1-background18"
+          />
+          <span class="menu1-text150">
+            <span>Typesetting industry lorem Lorem Ipsum is simply</span>
+            <br />
+            <span>dummy text of the priand.</span>
+          </span>
+          <img
+            src="public/external/image2697-6xuh-200h.png"
+            alt="Image2697"
+            class="menu1-image33"
+          />
+          <span class="menu1-text154">Olivas Rellenas</span>
+          <img
+            src="public/external/image2697-hazu-300w.png"
+            alt="Image2697"
+            class="menu1-image34"
+          />
+          <img
+            src="public/external/image2697-tl6c-200h.png"
+            alt="Image2697"
+            class="menu1-image35"
+          />
+          <img
+            src="public/external/image2697-awgs-500h.png"
+            alt="Image2697"
+            class="menu1-image36"
+          />
+          <img
+            src="public/external/background2697-1vjs-200h.png"
+            alt="Background2697"
+            class="menu1-background19"
+          />
+          <span class="menu1-text155">
+            <span>Vegetables, cheeses, ground meats, tomato sauce,</span>
+            <br />
+            <span>seasonings and spices</span>
+          </span>
+          <span class="menu1-text159">$49.00</span>
+          <img
+            src="public/external/background2698-bi9p-200h.png"
+            alt="Background2698"
+            class="menu1-background20"
+          />
+          <span class="menu1-text160">Opu Fish</span>
+          <img
+            src="public/external/image2698-c3kq-200h.png"
+            alt="Image2698"
+            class="menu1-image37"
+          />
+          <img
+            src="public/external/image2698-1dc-200h.png"
+            alt="Image2698"
+            class="menu1-image38"
+          />
+          <span class="menu1-text161">
+            <span>Vegetables, cheeses, ground meats, tomato sauce,</span>
+            <br />
+            <span>seasonings and spices.</span>
+          </span>
+          <span class="menu1-text165">$39.00</span>
+          <img
+            src="public/external/background2698-xmxl-200h.png"
+            alt="Background2698"
+            class="menu1-background21"
+          />
+          <button class="menu1-button3">
+            <img
+              src="public/external/background2698-srak-200h.png"
+              alt="Background2698"
+              class="menu1-background22"
+            />
+            <span class="menu1-text166">NEW</span>
+          </button>
+          <span class="menu1-text167">Tokusen Wagyu</span>
+          <img
+            src="public/external/image2699-0q9r-200h.png"
+            alt="Image2699"
+            class="menu1-image39"
+          />
+          <span class="menu1-text168">$10.00</span>
+          <img
+            src="public/external/image2699-fbpg-200w.png"
+            alt="Image2699"
+            class="menu1-image40"
+          />
+          <img
+            src="public/external/image2699-kr4-200w.png"
+            alt="Image2699"
+            class="menu1-image41"
+          />
+          <img
+            src="public/external/background2699-f82e-200h.png"
+            alt="Background2699"
+            class="menu1-background23"
+          />
+          <span class="menu1-text169">Butternut Pumpkin</span>
+          <img
+            src="public/external/image2699-1pfd-200h.png"
+            alt="Image2699"
+            class="menu1-image42"
+          />
+          <div class="menu1-groups2">
+            <span class="menu1-text170">
+              <span>Vegetables, cheeses, ground meats, tomato sauce,</span>
+              <br />
+              <span>seasonings and spices</span>
+            </span>
+            <span class="menu1-text174">$40.00</span>
+            <img
+              src="public/external/background2610-w1wy-200h.png"
+              alt="Background2610"
+              class="menu1-background24"
+            />
+            <span class="menu1-text175">Lasagne</span>
+            <img
+              src="public/external/image2610-ikx-200h.png"
+              alt="Image2610"
+              class="menu1-image43"
+            />
+          </div>
+          <img
+            src="public/external/image2610-v6t9-200w.png"
+            alt="Image2610"
+            class="menu1-image44"
+          />
+          <span class="menu1-text176">
+            <span>Tomatoes, green bell pepper, sliced cucumber onion,</span>
+            <br />
+            <span>olives, and feta cheese.</span>
+          </span>
+          <span class="menu1-text180">$25.50</span>
+          <img
+            src="public/external/background2610-e23-200h.png"
+            alt="Background2610"
+            class="menu1-background25"
+          />
+          <button class="menu1-button4">
+            <img
+              src="public/external/background2610-7k36-200h.png"
+              alt="Background2610"
+              class="menu1-background26"
+            />
+            <span class="menu1-text181">SEASONAL</span>
+          </button>
+          <span class="menu1-text182">Greek Salad</span>
+          <img
+            src="public/external/image2610-jt6oi-200h.png"
+            alt="Image2610"
+            class="menu1-image45"
+          />
+          <img
+            src="public/external/image2610-a28z-200w.png"
+            alt="Image2610"
+            class="menu1-image46"
+          />
+          <img
+            src="public/external/image2610-cefc-200h.png"
+            alt="Image2610"
+            class="menu1-image47"
+          />
+          <span class="menu1-text183">
+            <span>Avocados with crab meat, red onion, crab salad stuffed</span>
+            <br />
+            <span>red bell pepper and green bell pepper</span>
+          </span>
+          <span class="menu1-text187">$25.00</span>
+          <img
+            src="public/external/background2610-q8rm-200h.png"
+            alt="Background2610"
+            class="menu1-background27"
+          />
+          <span class="menu1-text188">
+            <span>Typesetting industry lorem Lorem Ipsum is simply</span>
+            <br />
+            <span>dummy text of the priand.</span>
+          </span>
+          <img
+            src="public/external/image2610-f4cb-200h.png"
+            alt="Image2610"
+            class="menu1-image48"
+          />
+          <span class="menu1-text192">Olivas Rellenas</span>
+          <img
+            src="public/external/image2610-e96o-200h.png"
+            alt="Image2610"
+            class="menu1-image49"
+          />
+          <span class="menu1-text193">
+            <span>Vegetables, cheeses, ground meats, tomato sauce,</span>
+            <br />
+            <span>seasonings and spices</span>
+          </span>
+          <span class="menu1-text197">$49.00</span>
+          <img
+            src="public/external/background2610-2rc-200h.png"
+            alt="Background2610"
+            class="menu1-background28"
+          />
+          <span class="menu1-text198">Opu Fish</span>
+          <img
+            src="public/external/image2610-3fh-200h.png"
+            alt="Image2610"
+            class="menu1-image50"
+          />
+          <img
+            src="public/external/image2610-cqqq-200h.png"
+            alt="Image2610"
+            class="menu1-image51"
+          />
+          <span class="menu1-text199">
+            <span>Vegetables, cheeses, ground meats, tomato sauce,</span>
+            <br />
+            <span>seasonings and spices.</span>
+          </span>
+          <span class="menu1-text203">$39.00</span>
+          <img
+            src="public/external/background2610-5z69-200h.png"
+            alt="Background2610"
+            class="menu1-background29"
+          />
+          <button class="menu1-button5">
+            <img
+              src="public/external/background2610-t8edl-200h.png"
+              alt="Background2610"
+              class="menu1-background30"
+            />
+            <span class="menu1-text204">NEW</span>
+          </button>
+          <span class="menu1-text205">Tokusen Wagyu</span>
+          <img
+            src="public/external/image2610-o69m-200h.png"
+            alt="Image2610"
+            class="menu1-image52"
+          />
+          <span class="menu1-text206">$10.00</span>
+          <img
+            src="public/external/image2610-29s8-200w.png"
+            alt="Image2610"
+            class="menu1-image53"
+          />
+          <img
+            src="public/external/image2610-9j4a-200w.png"
+            alt="Image2610"
+            class="menu1-image54"
+          />
+          <img
+            src="public/external/background2610-2ulx-200h.png"
+            alt="Background2610"
+            class="menu1-background31"
+          />
+          <span class="menu1-text207">Butternut Pumpkin</span>
+          <img
+            src="public/external/image2610-wsno-200h.png"
+            alt="Image2610"
+            class="menu1-image55"
+          />
+          <div class="menu1-groups3">
+            <span class="menu1-text208">
+              <span>Vegetables, cheeses, ground meats, tomato sauce,</span>
+              <br />
+              <span>seasonings and spices</span>
+            </span>
+            <span class="menu1-text212">$40.00</span>
+            <img
+              src="public/external/background2610-wm59-200h.png"
+              alt="Background2610"
+              class="menu1-background32"
+            />
+            <span class="menu1-text213">Lasagne</span>
+            <img
+              src="public/external/image2610-p6q-200h.png"
+              alt="Image2610"
+              class="menu1-image56"
+            />
+          </div>
+          <img
+            src="public/external/image2610-fxj-200w.png"
+            alt="Image2610"
+            class="menu1-image57"
+          />
+          <span class="menu1-text214">
+            <span>Tomatoes, green bell pepper, sliced cucumber onion,</span>
+            <br />
+            <span>olives, and feta cheese.</span>
+          </span>
+          <span class="menu1-text218">$25.50</span>
+          <img
+            src="public/external/background2610-6g5p-200h.png"
+            alt="Background2610"
+            class="menu1-background33"
+          />
+          <button class="menu1-button6">
+            <img
+              src="public/external/background2610-w9kg-200h.png"
+              alt="Background2610"
+              class="menu1-background34"
+            />
+            <span class="menu1-text219">SEASONAL</span>
+          </button>
+          <span class="menu1-text220">Greek Salad</span>
+          <img
+            src="public/external/image2610-3r6b-200h.png"
+            alt="Image2610"
+            class="menu1-image58"
+          />
+          <img
+            src="public/external/image2610-yifx-200w.png"
+            alt="Image2610"
+            class="menu1-image59"
+          />
+          <img
+            src="public/external/image2613-275-200w.png"
+            alt="Image2613"
+            class="menu1-image60"
+          />
+          <img
+            src="public/external/image2613-fqs-200h.png"
+            alt="Image2613"
+            class="menu1-image61"
+          />
+          <button class="menu1-button7"></button>
+          <span class="menu1-text221">2 3 4 . . . . . . . . . . . .</span>
+          <img
+            src="public/external/image5611-gj9k-300h.png"
+            alt="Image5611"
+            class="menu1-image62"
+          />
+          <img
+            src="public/external/nextpage5611-2zeu-200h.png"
+            alt="Nextpage5611"
+            class="menu1-nextpage1"
+          />
+          <img
+            src="public/external/nextpage5611-0tlv-200h.png"
+            alt="Nextpage5611"
+            class="menu1-nextpage2"
+          />
+          <img
+            src="public/external/image15611-i4x-200h.png"
+            alt="IMAGE15611"
+            class="menu1image1"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
